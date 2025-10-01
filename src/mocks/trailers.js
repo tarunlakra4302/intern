@@ -1,0 +1,91 @@
+export const trailers = [
+  {
+    id: "TRL-0001",
+    rego: "TR123456",
+    type: "Flatbed",
+    make: "Maxitrans",
+    model: "ST3",
+    year: 2020,
+    status: "active",
+    regoExpiry: "2025-04-20",
+    lastServiceDate: "2024-08-15",
+    nextServiceDue: "2025-02-15",
+    maxWeight: 45000,
+    length: 12.5,
+    width: 2.5,
+    height: 4.3,
+    notes: "Standard flatbed trailer, good condition"
+  },
+  {
+    id: "TRL-0002",
+    rego: "TR789012",
+    type: "Curtainsider",
+    make: "Vawdrey",
+    model: "VBS3",
+    year: 2019,
+    status: "active",
+    regoExpiry: "2024-12-10",
+    lastServiceDate: "2024-09-05",
+    nextServiceDue: "2025-03-05",
+    maxWeight: 42000,
+    length: 13.7,
+    width: 2.5,
+    height: 4.3,
+    notes: "Curtain sides recently replaced"
+  },
+  {
+    id: "TRL-0003",
+    rego: "TR345678",
+    type: "Refrigerated",
+    make: "Lucar",
+    model: "LC40",
+    year: 2021,
+    status: "maintenance",
+    regoExpiry: "2025-08-30",
+    lastServiceDate: "2024-07-20",
+    nextServiceDue: "2025-01-20",
+    maxWeight: 40000,
+    length: 12.2,
+    width: 2.5,
+    height: 4.3,
+    notes: "Refrigeration unit under repair"
+  },
+  {
+    id: "TRL-0004",
+    rego: "TR901234",
+    type: "Tipper",
+    make: "Hercules",
+    model: "HEDT",
+    year: 2022,
+    status: "active",
+    regoExpiry: "2025-06-15",
+    lastServiceDate: "2024-09-25",
+    nextServiceDue: "2025-03-25",
+    maxWeight: 48000,
+    length: 10.5,
+    width: 2.5,
+    height: 3.8,
+    notes: "New hydraulic system installed"
+  },
+  {
+    id: "TRL-0005",
+    rego: "TR567890",
+    type: "Tank",
+    make: "Marshall Lethlean",
+    model: "ML-ST",
+    year: 2018,
+    status: "active",
+    regoExpiry: "2025-01-22",
+    lastServiceDate: "2024-08-30",
+    nextServiceDue: "2025-02-28",
+    maxWeight: 43000,
+    length: 12.0,
+    width: 2.5,
+    height: 4.0,
+    notes: "Stainless steel tank, food grade certified"
+  }
+];
+
+export const getTrailerById = (id) => trailers.find(trailer => trailer.id === id);
+
+export const getActiveTrailers = () => trailers.filter(trailer => trailer.status === 'active');

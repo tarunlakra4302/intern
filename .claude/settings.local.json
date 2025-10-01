@@ -1,0 +1,36 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(tree:*)",
+      "Bash(mkdir:*)",
+      "Bash(npm install)",
+      "Bash(npm run dev:*)",
+      "Bash(npm install:*)",
+      "Bash(npm run build:*)",
+      "Bash(find:*)",
+      "Bash(while read file)",
+      "Bash(do echo \"=== $file ===\")",
+      "Bash(head:*)",
+      "Bash(done)",
+      "Bash(for file in src/pages/admin/*.jsx src/pages/driver/*.jsx)",
+      "Bash(npm run preview:*)",
+      "Bash(grep:*)",
+      "Bash(curl http://localhost:5000/api/health)",
+      "Bash(curl:*)",
+      "Bash(cat:*)",
+      "Bash(ls:*)",
+      "Bash(node:*)",
+      "Bash(psql:*)",
+      "Bash(pg_config:*)",
+      "Bash(pg_ctl:*)",
+      "Bash(where psql)",
+      "Bash(net start:*)",
+      "Bash(sc query:*)",
+      "Bash(npx eslint:*)",
+      "Bash(netstat:*)",
+      "Bash(findstr:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
